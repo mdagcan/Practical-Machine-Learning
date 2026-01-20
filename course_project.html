@@ -1,0 +1,21 @@
+---
+title: "Practical Machine Learning Course Project"
+subtitle: "Weight Lifting Exercise Quality Prediction"
+author: "Mustafa Senturk"
+date: "`r format(Sys.Date(), '%B %d, %Y')`"
+output: 
+  html_document:
+    toc: true
+    toc_depth: 3
+    theme: cosmo
+    highlight: tango
+---
+
+```{r setup, include=FALSE, warning=FALSE, message=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE, cache = TRUE)
+library(caret)
+library(randomForest)
+library(rpart)
+library(ggplot2)
+library(dplyr)
+set.seed(1234)
